@@ -1,14 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+// styles
 import './PageSelector.css';
 
 const PageSelector = () => {
+  const [active, setActive] = useState('')
+
+  console.log(active)
+
+  const pageNames = [
+    "Demographic Info",
+    "Medications / Allergies",
+    "Medical History",
+    "Family History",
+    "Emergency Contacts"
+  ];
+
+  const setClassNames = page => {
+    const classNameArr = ["selector-item"];
+    if (active == page) classNameArr.push('active')
+    return classNameArr.join(' ');
+  };
+
+  const renderSelectors = () => {
+    return pageNames.map(page=> {
+    return (
+      <h3 className={setClassNames(page)}
+        onClick={e => setActive(e.target.innerText)}> 
+        {page} 
+      </h3>
+      )
+    });
+  };
+
   return (
     <div className="PageSelector">
-      <div className="selector-item">Demographic Info</div>
-      <div className="selector-item">Medical History</div>
-      <div className="selector-item">Medications/Allergies</div>
-      <div className="selector-item">Family Health History</div>
-      <div className="selector-item">Emergency Contacts</div>
+      {renderSelectors()}
     </div>
   );
 }

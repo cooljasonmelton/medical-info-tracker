@@ -10,7 +10,6 @@ import MedInfoContainer from './components/med_info_container/MedInfoContainer';
 const App = () => {
   return (
     <div className="App">
-      app
       <PageSelector/>
       <MedInfoContainer/>
     </div>
