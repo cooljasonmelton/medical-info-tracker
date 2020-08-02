@@ -5,6 +5,7 @@
 
     display: flex;
     justify-content: stretch;
+
 }
 
 .selector-item{
@@ -13,10 +14,12 @@
     border: 1px solid black;
     
     margin: 0;
-    padding: 0.5em 1em;    
+    padding: 0.5em 1em; 
+    transition: flex-grow 0.5s, border-bottom 0.5s;
 }
 
 
 .selector-item.active{
     border-bottom: 0;
+    flex-grow: 3;
 }

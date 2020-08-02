@@ -1,12 +1,7 @@
 .info-comp{
     width: 80%;
-    
     border: 1px solid black;
-    border-top: 0;  
-    
-    
-    
-    
+    border-top: 0;         
 }
 
 .info-comp > p {
