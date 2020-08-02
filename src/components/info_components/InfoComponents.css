@@ -1,0 +1,13 @@
+.info-comp{
+    width: 80%;
+    
+    border: 1px solid black;
+    border-top: 0;  
+    
+    
+}
+
+.info-header{
+    text-align: center;
+
+}
