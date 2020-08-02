@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import './PageSelector.css';
 
 const PageSelector = () => {
-  const [active, setActive] = useState('Demographic Info')
+  const [active, setActive] = useState('Demographics')
 
   // array of page names
   const pageNames = [
