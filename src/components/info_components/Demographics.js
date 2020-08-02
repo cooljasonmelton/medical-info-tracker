@@ -24,24 +24,17 @@ const Demographics = () => {
     "Date of last physical exam:"
   ]
 
-  const renderPageItems = (itemArr, edit) => {
-    return itemArr.map(label => {
-      return <ItemDisplayEdit label={label} edit={edit}/>
-    })
-  }
-
-
   return (
     <div className="Demographics info-comp">
 
       <h1 className="info-header">Demographics</h1>
-      
-      {renderPageItems(demographicItems, edit)}
-
       <button className="edit-button" 
         onClick={() => setEdit(!edit)}>
         Edit
       </button>
+      
+      {demographicItems.map(label => <ItemDisplayEdit label={label} edit={edit}/>)}
+
 
     </div>
   );

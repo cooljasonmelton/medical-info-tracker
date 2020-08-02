@@ -1,5 +1,8 @@
 import React, { useState} from 'react';
 
+
+// takes props of 'edit' boolean and 'label string
+// returns toggle between text or input depending on 'edit'
 const ItemDisplayEdit = (props) => {
     const [inputText, setInputText] = useState("")
     const {label, edit} = props
@@ -11,7 +14,6 @@ const ItemDisplayEdit = (props) => {
                     : <h3 className="">{inputText}</h3>}
         </p> 
     )
-
 }
 
 export default ItemDisplayEdit
