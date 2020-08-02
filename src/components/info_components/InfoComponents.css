@@ -5,9 +5,14 @@
     border-top: 0;  
     
     
+    
+    
+}
+
+.info-comp > p {
+    text-indent: 5em;
 }
 
 .info-header{
     text-align: center;
-
 }
