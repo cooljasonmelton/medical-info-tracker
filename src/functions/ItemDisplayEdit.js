@@ -10,7 +10,8 @@ const ItemDisplayEdit = (props) => {
         <p className="">
             <div className="">{label}</div> 
             {edit ? 
-                <input onChange={e => setInputText(e.target.value)}/> 
+                <input value ={inputText}
+                    onChange={e => setInputText(e.target.value)}/> 
                     : <h3 className="">{inputText}</h3>}
         </p> 
     )
