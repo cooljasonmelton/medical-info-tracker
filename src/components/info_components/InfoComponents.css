@@ -1,0 +1,18 @@
+.info-comp{
+    width: 80%;
+    
+    border: 1px solid black;
+    border-top: 0;  
+    
+    
+    
+    
+}
+
+.info-comp > p {
+    text-indent: 5em;
+}
+
+.info-header{
+    text-align: center;
+}

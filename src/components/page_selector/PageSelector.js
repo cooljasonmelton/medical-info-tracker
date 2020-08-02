@@ -8,9 +8,9 @@ const PageSelector = () => {
 
   // array of page names
   const pageNames = [
-    "Demographic Info",
-    "Medications / Allergies",
+    "Demographics",
     "Medical History",
+    "Medications / Allergies",
     "Family History",
     "Emergency Contacts"
   ];
