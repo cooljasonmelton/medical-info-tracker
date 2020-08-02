@@ -1,18 +1,21 @@
 .info-comp{
     width: 80%;
-    
     border: 1px solid black;
-    border-top: 0;  
+    border-top: 0;    
     
-    
-    
-    
+    display: flex;
+    flex-direction: column;
 }
 
-.info-comp > p {
-    text-indent: 5em;
+.info-comp > p, .info-comp > input {
+    margin: 1%;
 }
 
 .info-header{
     text-align: center;
+}
+
+.edit-button{
+    width: 20%;
+    align-self: center;
 }
