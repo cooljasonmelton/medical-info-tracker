@@ -11,6 +11,7 @@ import PageSelector from './components/page_selector/PageSelector';
 import MedInfoContainer from './components/med_info_container/MedInfoContainer';
 import Demographics from './components/info_components/Demographics';
 import EmergencyContacts from './components/info_components/EmergencyContacts';
+import MedicalHistory from './components/info_components/MedicalHistory';
 
 const App = () => {
   return (
@@ -23,7 +24,7 @@ const App = () => {
 
         <Switch>
             <Route exact path="/demographics" component={Demographics} />
-            <Route exact path="/" component={null} />
+            <Route exact path="/medical-history" component={MedicalHistory} />
             <Route exact path="/" component={null} />
             <Route exact path="/" component={null} />
             <Route exact path="/emergency-contacts" component={EmergencyContacts} />
