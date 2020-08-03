@@ -18,6 +18,8 @@ Date:________________________ Marital status: ■ Single ■ Partnered ■ Marri
 Number of children:____________ How many live with you?____________ Occupation is/was:__________________________________
 Previous or referring doctor:______________________________________ Date of last physical exam: ___
 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
 PERSONAL HEALTH HISTORY
 Childhood Illness: ■ Measles ■ Mumps ■ Rubella ■ Chickenpox ■ Rheumatic Fever ■ Polio ■ None
 Immunizations and Dates: ■ Tetanus__________ ■ Pneumonia__________ ■ Hepatitis A__________ ■ Hepatitis B__________

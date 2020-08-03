@@ -1,16 +1,19 @@
 import React, { useState } from 'react';
 
+// router
+import { withRouter } from 'react-router-dom'
+
 // styles
 import './PageSelector.css';
 
-const PageSelector = () => {
+const PageSelector = props => {
   const [active, setActive] = useState('Demographics')
 
   // array of page names
   const pageNames = [
     "Demographics",
     "Medical History",
-    "Medications / Allergies",
+    "Medications and Allergies",
     "Family History",
     "Emergency Contacts"
   ];
@@ -24,6 +27,8 @@ const PageSelector = () => {
 
   const handleClick = e => {
     setActive(e.target.innerText)
+    let route = e.target.innerText.toLowerCase().replace(/ /g,"-");
+    props.history.push(`./${route}`)
     // add push to route to change med info
   }
 
@@ -46,4 +51,4 @@ const PageSelector = () => {
   );
 }
 
-export default PageSelector;
+export default withRouter(PageSelector);
