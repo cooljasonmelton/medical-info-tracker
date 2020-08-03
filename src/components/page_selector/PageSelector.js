@@ -13,7 +13,7 @@ const PageSelector = props => {
   const pageNames = [
     "Demographics",
     "Medical History",
-    "Medications and Allergies",
+    "Medications & Allergies",
     "Family History",
     "Emergency Contacts"
   ];
@@ -21,7 +21,7 @@ const PageSelector = props => {
   // sets class names, adds active if page matches state
   const setClassNames = page => {
     const classNameArr = ["selector-item"];
-    if (active == page) classNameArr.push('active')
+    if (active === page) classNameArr.push('active')
     return classNameArr.join(' ');
   };
 

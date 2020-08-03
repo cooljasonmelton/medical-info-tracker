@@ -34,8 +34,6 @@ const EmergencyContacts = () => {
     return contactArr
   }
 
-
-
   return (
     <div className="EmergencyContacts info-comp">
 
@@ -49,6 +47,9 @@ const EmergencyContacts = () => {
 
       <button onClick={() => setNumContact(numContact + 1)}>
           Add Contact
+      </button>
+      <button onClick={() => setNumContact(numContact - 1)}>
+          Remove Contact
       </button>
 
 
