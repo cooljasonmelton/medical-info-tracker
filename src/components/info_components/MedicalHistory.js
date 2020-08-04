@@ -4,6 +4,7 @@ import './InfoComponents.css';
 
 //components
 import ItemDisplayEdit from '../../functions/ItemDisplayEdit'
+import CheckBoxDisplayEdit from '../../functions/CheckboxDisplayEdit'
 // import {renderPageItems} from '../../functions/renderPageItems'
 
 
@@ -15,7 +16,6 @@ const MedicalHistory = () => {
   const medicalInputItems = [
 
   ]
-
 
   // checkbox items
   const medicalCheckBoxItems = [
@@ -72,6 +72,14 @@ const MedicalHistory = () => {
     "Other Disease, Cancer, or Significant Medical Illness"
   ]
 
+
+  const renderMedicalCheckboxes = () => {
+    return medicalCheckBoxItems.map(item => {
+      return <CheckBoxDisplayEdit edit={edit} label={item}/>
+    })
+
+  }
+
   return (
     <div className="MedicalHistory info-comp">
 
@@ -81,8 +89,10 @@ const MedicalHistory = () => {
         Edit
       </button>  
 
+      {renderMedicalCheckboxes()}
 
-      
+
+
     </div>
   );
 }
