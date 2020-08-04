@@ -33,3 +33,20 @@ const Medications = () => {
 }
 
 export default Medications;
+
+/*
+
+List your prescribed drugs and over-the-counter drugs, such as vitamins and inhalers
+Drug _________________________ Dose/Frequency_________ Drug_________________________ Dose/Frequency ____________
+Drug _________________________ Dose/Frequency_________ Drug_________________________ Dose/Frequency ____________
+Drug _________________________ Dose/Frequency_________ Drug_________________________ Dose/Frequency ____________
+Drug _________________________ Dose/Frequency_________ Drug_________________________ Dose/Frequency ____________
+■ List additional drugs on back of questionnaire
+■ I take no medications, vitamins, herbals, or any other over-the-counter preparations
+
+
+Allergies
+Name________________________________________ Reaction You Had _________________________________________________
+■ I have no known drug allergies
+
+*/
